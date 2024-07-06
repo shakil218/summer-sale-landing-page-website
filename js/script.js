@@ -29,6 +29,12 @@ function getElementInnerText(target){
   if (totalPrice>0){
     document.getElementById('purchase-btn').disabled = false;
   }
-
   
+  if (totalPrice > 200){
+    document.getElementById('user-coupon').disabled = false;
+  }
+
+  document.getElementById('go-home-btn').addEventListener('click',function(){
+    window.location.href = 'index.html'
+  })
 }
