@@ -48,6 +48,7 @@ function getElementInnerText(target){
 
   document.getElementById('go-home-btn').addEventListener('click',function(){
     document.getElementById("user-coupon").value = ''
+    document.getElementById('user-coupon').disabled = true;
     purchaseProductListContainer.innerText = '';
     totalPriceAmount.innerText = '00'
     discountPrice.innerText = '00';
